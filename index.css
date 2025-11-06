@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Zalando Sans';
+  src: url(regular-variable-font.ttf);
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    font-family: 'Zalando Sans';
+}
