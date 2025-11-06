@@ -1,0 +1,342 @@
+@font-face {
+  font-family: 'Zalando Sans';
+  src: url(regular-variable-font.ttf);
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    font-family: 'Zalando Sans';
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+.workspace
+{
+    display: flex;
+    flex-direction: column;
+
+    .menu
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        color: #fff;
+        border-bottom: 1px solid #696969;
+        background-color: #282826;
+
+        .logo img
+        {
+            width: 180px;
+            margin-left: 10px;
+        }
+
+        .nav-item
+        {
+            a
+            {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            a:hover
+            {
+                color: #f86d36;
+            }
+        }
+    }
+
+    .home-section
+    {
+        display: flex;
+        flex-direction: row;
+        height: 650px;
+        max-height:650px;
+        align-items: center;
+        background-image: url('images/game-full-bg.png');
+        background-repeat: round;
+        color: #fff;
+
+        .content
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 40%;
+            padding: 20px;
+            border-right: 1px solid #d4d4d2;
+
+            .title
+            {
+                text-align: center;
+                font-size: large;
+            }
+
+            .game-icon 
+            {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                img
+                {
+                    width: 150px;
+                    border-radius: 30px;
+                    border: 1px solid #7c7c75;
+                }
+            }
+
+            .play-store 
+            {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img
+                {
+                    width: 150px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .description
+        {
+            width: 60%;
+            /* background-color: rgb(235, 235, 235); */
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border-left: 1px solid #d4d4d2; */
+            /* background-image: url('images/game-full-bg.png');
+            background-repeat: round; */
+            
+            .block
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 70%;
+                color: #fff;
+                
+                .title
+                {
+                    text-align: center;
+                    font-size: large;
+                    font-weight: 700;
+                }
+                
+                .text
+                {
+                    text-indent: 20px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .about-section
+    {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        background-color: #ebebeb;
+        border-bottom: 1px solid #d8d8d5;
+
+        .banner
+        {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+
+            img
+            {
+                width: 100%;
+                border-radius: 30px;
+            }
+        }
+
+        .description
+        {
+            width: 60%;
+            background-color: rgb(235, 235, 235);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .block
+            {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                gap: 20px;
+                
+                .title
+                {
+                    text-align: center;
+                    font-size: large;
+                    font-weight: 700;
+                }
+                
+                .text
+                {
+                    text-indent: 20px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .contact-section
+    {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+
+        .description
+        {
+            width: 40%;
+            /* background-color: rgb(235, 235, 235); */
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .block
+            {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                gap: 20px;
+                
+                .title
+                {
+                    text-align: center;
+                    font-size: large;
+                    font-weight: 700;
+                }
+                
+                .text
+                {
+                    text-indent: 20px;
+                    text-align: justify;
+                }
+            }
+        }
+
+        .form
+        {
+            width: 60%;
+            padding: 30px;
+
+            form
+            {
+                input, textarea
+                {
+                    border: 1px solid #adadad;
+                    border-radius: 5px;
+                    padding: 5px;
+                    outline: none;
+                    color: #282826;
+                    height: 40px;
+                    min-height: 40px;
+                }
+
+                textarea
+                {
+                    min-height: 190px;
+                    max-height: 190px;
+                }
+
+                button
+                {
+                    border-radius: 5px;
+                }
+            }
+
+            .feedback
+            {
+                color: #282826;
+                background-color: #b3e79b;
+                padding: 10px;
+                border-radius: 5px;
+                display: none;
+            }
+        }
+    }
+
+    .footer
+    {
+        background-color: #ebebeb;
+        padding: 10px;
+        color: #646463;
+        font-size: small;
+        border-top: 1px solid #d8d8d5;
+    }
+}
+
+@media (max-width: 768px)  
+{
+    .workspace
+    {
+        .home-section
+        {
+            .content
+            {
+                border: none;
+                width: 100%;
+            }
+
+            .description
+            {
+                display: none;
+            }
+        }
+
+        .about-section
+        {
+            flex-direction: column;
+            height: fit-content;
+
+            .banner, .description
+            {
+                width: 100%;
+            }
+
+            .description
+            {
+                height: 300px;
+            }
+        }
+
+        .contact-section
+        {
+            flex-direction: column;
+            height: fit-content;
+
+            .form, .description
+            {
+                width: 100%;
+            }
+
+            .description
+            {
+                height: 300px;
+            }
+        }
+    }
+}
