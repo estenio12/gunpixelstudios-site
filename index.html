@@ -1,16 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gunpixel Studios</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
 
-    
+    <div class="workspace">
+
+        <div class="menu">
+
+            <div class="logo"><img src="images/logo.png" alt="logo gunpixel studios"></div>
+            <div class="nav-item"><a href="#home">Home</a></div>
+            <div class="nav-item"><a href="#about">Sobre</a></div>
+            <div class="nav-item"><a href="#contact">Contato</a></div>
+
+        </div>
+
+        <div id="home" class="home-section">
+
+            <div class="content">
+
+                <div class="title">Fishing on the Weekend: Brazilean Rivers</div>
+
+                <div class="game-icon"><img src="images/game-icon.png" alt="ícone do jogo"></div>
+
+                <div class="play-store">
+                    <div class="soon">Em breve</div>
+                    <img src="images/play-store.png" alt="imagem/link de disponível na google play store">
+                </div>
+
+            </div>
+
+            <div class="description">
+
+                <div class="block">
+
+                    <div class="title">
+                        Viva a Experiência da Pesca.
+                    </div>
+
+                    <div class="text">
+                        Descubra um mundo criado com paixão, onde cada lançamento de linha traz novas histórias e desafios.
+                        Explore, aprimore suas habilidades e mergulhe em uma jornada que vai muito além de apenas pescar.
+                        Prepare-se para sentir a emoção da captura — e a tranquilidade das águas.
+
+                        Jogue agora e pesque sua próxima aventura.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="about" class="about-section">
+            
+            <div class="banner"><img src="images/img-quem-somos.jpg" alt="imagem de pessoas trabalhando no computador"></div>
+            
+            <div class="description">
+                
+
+                <div class="block">
+
+                    <div class="title">Quem somos!</div>
+
+                    <div class="text">
+                        A Gunpixel Studios é um estúdio independente dedicado à criação de jogos com identidade, propósito e cuidado em cada detalhe.
+                        Nosso foco é desenvolver experiências que inspirem e conectem jogadores, unindo criatividade, técnica e narrativa.
+                        
+                        Estamos apenas começando, mas acreditamos que grandes histórias nascem de ideias simples — e da vontade de transformá-las em algo marcante.
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div id="contact" class="contact-section">
+
+            <div class="description">
+
+                <div class="block">
+
+                    <div class="title">Fale conosco!</div>
+
+                    <div class="text">
+                        A Gun Pixel Studios está sempre aberta a novas oportunidades e colaborações.
+
+                        Se você deseja ajuda com alguns dos nossos produtos, apresentar uma proposta, discutir parcerias ou obter mais informações sobre nossos projetos, entre em contato.
+                        Responderemos com atenção e o comprometimento que nos define.
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="form">
+
+                <div class="feedback-container">
+
+                    <div id="feedback" class="feedback">
+                        <strong>Mensagem enviado com sucesso!</strong>  Retornaremos o mais breve possível. 
+                    </div>
+
+                </div>
+
+                <form id="contact-form" action="https://formsubmit.co/c80159d8a3fbf0f801df6a6d98e5ba7b" method="POST">
+                    <!-- Proteções básicas -->
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Contato pelo site do estúdio">
+                     <input type="text" name="_honey" style="display:none" autocomplete="off" tabindex="-1">
+
+                    <div style="margin: 1rem 0;">
+                        <input id="contact-name" type="text" name="name" placeholder="Seu nome" required style="width: 100%; padding: .5rem;">
+                    </div>
+
+                    <div style="margin: 1rem 0;">
+                        <input id="contact-email" type="email" name="email" placeholder="Seu e-mail" required style="width: 100%; padding: .5rem;">
+                    </div>
+
+                    <div class="alert" style="color: #f59595;">* Não adicione informações sensíveis nesta mensagem inicial.</div>
+                    <div style="margin: 1rem 0;">
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Mensagem" required style="width: 100%; padding: .5rem;"></textarea>
+                    </div>
+
+                    <button type="submit" style="padding: .7rem 1.2rem; border: none; background: #444; color: #fff; cursor: pointer;">
+                        Enviar
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Gunpixel Studios &copy; 2026 | Todos os direitos reservados.
+        </div>
+
+    </div>
 
 </body>
 </html>
