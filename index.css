@@ -286,6 +286,87 @@ html
         color: #646463;
         font-size: small;
         border-top: 1px solid #d8d8d5;
+        display: flex;
+
+        .left
+        {
+            flex-grow: 1;
+        }
+
+        .right
+        {
+            .open-term-privacity
+            {
+                color: #507fac;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bg-block
+{
+    position: fixed;
+    background-color: rgba(40, 40, 38, 0.795);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.term-privacity
+{
+    width: 90%;
+    height: 90vh;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    color: #282826;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+
+    .header
+    {
+        border-bottom: 1px solid #282826;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+
+        .control
+        {
+            button
+            {
+                background-color: #696969;
+                outline: none;
+                border: 1px solid #646463;
+                padding: 5px;
+                border-radius: 5px;
+                color: #fff;
+            }
+
+            button:hover
+            {
+                cursor: pointer;
+                background-color: #7c7c75;
+            }
+        }
+    }
+
+    .body
+    {
+        overflow: hidden;
+        overflow-y: auto;
+        height: 63vh;
+
+        h3, h2, ul
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     }
 }
 

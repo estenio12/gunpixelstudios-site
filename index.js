@@ -22,3 +22,18 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
         alert("Não foi possível enviar a mensagem. Verifique sua conexão.");
     });
 });
+
+// # Verifica se foi especificado algo como query-params.
+const params = new URLSearchParams(window.location.search);
+console.log(params)
+if(params.get("section") === "privacy-terms")
+    ShowTermosPrivacidade(true);
+
+function ShowTermosPrivacidade(flag)
+{
+    const bgBlock = document.getElementById("bg-block");
+    const term = document.getElementById("term-privacity");
+
+    bgBlock.style.display = flag ? "block" : "none";
+    term.style.display = flag ? "block" : "none";
+}
