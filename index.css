@@ -315,8 +315,8 @@ html
 
 .term-privacity
 {
-    width: 90%;
-    height: 90vh;
+    width: 60%;
+    height: 95vh;
     position: fixed;
     overflow: hidden;
     overflow-y: auto;

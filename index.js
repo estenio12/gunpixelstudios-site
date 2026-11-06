@@ -25,9 +25,14 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
 
 // # Verifica se foi especificado algo como query-params.
 const params = new URLSearchParams(window.location.search);
-console.log(params)
 if(params.get("section") === "privacy-terms")
+{
     ShowTermosPrivacidade(true);
+}
+
+if (params.get('terms') === 'true') {
+    ShowTermosPrivacidade(true);
+}
 
 function ShowTermosPrivacidade(flag)
 {
