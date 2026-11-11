@@ -57,8 +57,8 @@ html
     {
         display: flex;
         flex-direction: column;
-        height: 650px;
-        max-height:650px;
+        height: 940px;
+        max-height: 940px;
         align-items: center;
         color: #fff;
 
@@ -66,6 +66,9 @@ html
         {
             display: flex;
             flex-direction: row;
+            background-repeat: round;
+            height: stretch;
+            align-items: center;
 
             .content
             {
@@ -148,22 +151,28 @@ html
         .protostrike-container
         {
             flex-direction: row-reverse;
+            background-image: url('images/ProtostrikeBG.png');
             
             .description
             {
-                border-right: 1px solid #d4d4d2;
+                .block
+                {
+                    background-color: #f57e2fbd;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
             }
 
             .content
             {
                 border: none;
+                border-left: 1px solid #d4d4d2;
             }
         }
 
         .fotw-container
         {
             background-image: url('images/game-full-bg.png');
-            background-repeat: round;
         }
     }
 
