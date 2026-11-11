@@ -56,93 +56,114 @@ html
     .home-section
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 650px;
         max-height:650px;
         align-items: center;
-        background-image: url('images/game-full-bg.png');
-        background-repeat: round;
         color: #fff;
 
-        .content
+        .product
         {
             display: flex;
-            flex-direction: column;
-            gap: 30px;
-            width: 40%;
-            padding: 20px;
-            border-right: 1px solid #d4d4d2;
+            flex-direction: row;
 
-            .title
-            {
-                text-align: center;
-                font-size: large;
-            }
-
-            .game-icon 
-            {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-
-                img
-                {
-                    width: 150px;
-                    border-radius: 30px;
-                    border: 1px solid #7c7c75;
-                }
-            }
-
-            .play-store 
-            {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                img
-                {
-                    width: 150px;
-                    border-radius: 10px;
-                    cursor: pointer;
-                }
-            }
-        }
-
-        .description
-        {
-            width: 60%;
-            /* background-color: rgb(235, 235, 235); */
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* border-left: 1px solid #d4d4d2; */
-            /* background-image: url('images/game-full-bg.png');
-            background-repeat: round; */
-            
-            .block
+            .content
             {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
-                width: 70%;
-                color: #fff;
-                
+                gap: 30px;
+                width: 40%;
+                padding: 20px;
+                border-right: 1px solid #d4d4d2;
+
                 .title
                 {
                     text-align: center;
                     font-size: large;
-                    font-weight: 700;
                 }
-                
-                .text
+
+                .game-icon 
                 {
-                    text-indent: 20px;
-                    text-align: justify;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    img
+                    {
+                        width: 150px;
+                        border-radius: 30px;
+                        border: 1px solid #7c7c75;
+                    }
+                }
+
+                .play-store 
+                {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img
+                    {
+                        width: 150px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
                 }
             }
+
+            .description
+            {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                .block
+                {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 70%;
+                    color: #fff;
+                    
+                    .title
+                    {
+                        text-align: center;
+                        font-size: large;
+                        font-weight: 700;
+                    }
+                    
+                    .text
+                    {
+                        text-indent: 20px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+
+        .protostrike-container
+        {
+            flex-direction: row-reverse;
+            
+            .description
+            {
+                border-right: 1px solid #d4d4d2;
+            }
+
+            .content
+            {
+                border: none;
+            }
+        }
+
+        .fotw-container
+        {
+            background-image: url('images/game-full-bg.png');
+            background-repeat: round;
         }
     }
 
@@ -210,7 +231,6 @@ html
         .description
         {
             width: 40%;
-            /* background-color: rgb(235, 235, 235); */
             height: 100%;
             display: flex;
             align-items: center;
